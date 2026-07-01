@@ -1,9 +1,10 @@
-import asyncio
+import os
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes, CallbackQueryHandler
 
-TOKEN = "8777970712:AAHeyS6TD7w2deMGdSWwMKcJscBRt5O7Br0"
+TOKEN = os.getenv("8777970712:AAEyCIsBaSRCZ_J5Z19D2lmWS-I8p-tH5eI")
+
 questions = [
 {
     "question": "What is the primary mechanism of action of morphine?",
